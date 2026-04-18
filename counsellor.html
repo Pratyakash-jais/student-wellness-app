@@ -18,14 +18,17 @@ fetch("https://your-app-name.onrender.com/getData")
   let output = "";
 
   data.forEach((d, index) => {
-    output += `
-      <div style="background:#ffffff20; padding:15px; margin:10px; border-radius:10px;">
-        <p><b>Student ${index + 1}</b></p>
-        <p><b>Mood:</b> ${d.mood}</p>
-        <p><b>Problem:</b> ${d.problem}</p>
-      <button onclick="openReply()">Reply</button>
-      </div>
-    `;
+output += `
+  <div style="background:#ffffff20; padding:15px; margin:10px; border-radius:10px;">
+    <p><b>Student ${index + 1}</b></p>
+    <p><b>Mood:</b> ${d.mood}</p>
+    <p><b>Problem:</b> ${d.problem}</p>
+
+    <textarea placeholder="Write reply"></textarea>
+    <br>
+    <button onclick="alert('Reply sent')">Send Reply</button>
+  </div>
+`;
   });
 
   document.getElementById("data").innerHTML = output;
