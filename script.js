@@ -14,7 +14,7 @@ function submitData() {
   let mood = document.getElementById("mood").value;
   let problem = document.getElementById("problem").value;
 
-  fetch("http://localhost:3000/saveData", {
+  fetch("https://wellness-backend-rts9.onrender.com/saveData", {
     method: "POST",
     headers: {"Content-Type": "application/json"},
     body: JSON.stringify({mood, problem})
