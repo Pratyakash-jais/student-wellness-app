@@ -24,11 +24,27 @@ function submitData() {
 }
 
 function sendMsg() {
-  let msg = document.getElementById("msg").value;
+  let msg = document.getElementById("msg").value.toLowerCase();
+  let reply = "";
 
-  if(msg.includes("stress")) {
-    document.getElementById("reply").innerText = "Try breathing exercises 🧘";
-  } else {
-    document.getElementById("reply").innerText = "You are doing great 💙";
+  if (msg.includes("stress") || msg.includes("pressure")) {
+    reply = "Try deep breathing and take short breaks 🧘";
+  } 
+  else if (msg.includes("sad") || msg.includes("depressed")) {
+    reply = "You are not alone 💙 Talk to someone you trust.";
+  } 
+  else if (msg.includes("anxiety")) {
+    reply = "Focus on slow breathing and grounding techniques 🌿";
+  } 
+  else if (msg.includes("exam")) {
+    reply = "Make a study plan and take breaks. You’ve got this 📚";
+  } 
+  else if (msg.includes("hello") || msg.includes("hi")) {
+    reply = "Hello! How can I help you today 😊";
+  } 
+  else {
+    reply = "I'm here for you. Can you tell me more?";
   }
+
+  document.getElementById("reply").innerText = reply;
 }
