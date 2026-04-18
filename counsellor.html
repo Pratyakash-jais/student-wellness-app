@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Counsellor</title>
+  <title>Counsellor Dashboard</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="card">
-  <h2>📋 Student Queries</h2>
+  <h2>📋 Counsellor Dashboard</h2>
   <div id="data"></div>
 </div>
 
@@ -16,11 +16,24 @@ fetch("https://your-app-name.onrender.com/getData")
 .then(res => res.json())
 .then(data => {
   let output = "";
-  data.forEach(d => {
-    output += `<p><b>Mood:</b> ${d.mood} <br> ${d.problem}</p><hr>`;
+
+  data.forEach((d, index) => {
+    output += `
+      <div style="background:#ffffff20; padding:15px; margin:10px; border-radius:10px;">
+        <p><b>Student ${index + 1}</b></p>
+        <p><b>Mood:</b> ${d.mood}</p>
+        <p><b>Problem:</b> ${d.problem}</p>
+        <button onclick="reply()">Reply</button>
+      </div>
+    `;
   });
+
   document.getElementById("data").innerHTML = output;
 });
+
+function reply() {
+  alert("Reply feature coming soon!");
+}
 </script>
 
 </body>
