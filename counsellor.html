@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Counsellor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+  <h2>📋 Student Queries</h2>
+  <div id="data"></div>
+</div>
+
+<script>
+fetch("http://localhost:3000/getData")
+.then(res => res.json())
+.then(data => {
+  let output = "";
+  data.forEach(d => {
+    output += `<p><b>Mood:</b> ${d.mood} <br> ${d.problem}</p><hr>`;
+  });
+  document.getElementById("data").innerHTML = output;
+});
+</script>
+
+</body>
+</html>

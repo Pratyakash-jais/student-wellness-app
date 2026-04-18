@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  text-align: center;
+}
+
+/* Glass effect card */
+.card {
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 50px auto;
+  width: 80%;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+button {
+  padding: 12px 20px;
+  margin: 10px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+input, textarea, select {
+  width: 80%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.hero {
+  background: url("https://images.unsplash.com/photo-1526256262350-7da7584cf5eb");
+  background-size: cover;
+  padding: 100px 20px;
+}
