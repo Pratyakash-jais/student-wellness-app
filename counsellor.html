@@ -23,14 +23,16 @@ fetch("https://your-app-name.onrender.com/getData")
         <p><b>Student ${index + 1}</b></p>
         <p><b>Mood:</b> ${d.mood}</p>
         <p><b>Problem:</b> ${d.problem}</p>
-        <button onclick="reply()">Reply</button>
+      <button onclick="openReply()">Reply</button>
       </div>
     `;
   });
 
   document.getElementById("data").innerHTML = output;
 });
-
+function openReply() {
+  window.location.href = "reply.html";
+}
 function reply() {
   alert("Reply feature coming soon!");
 }
