@@ -9,12 +9,12 @@ body {
 /* Glass effect card */
 .card {
   backdrop-filter: blur(10px);
-  background: rgba(110, 122, 193, 0.1);
+  background: rgba(255,255,255,0.1);
   border-radius: 20px;
   padding: 30px;
   margin: 50px auto;
   width: 80%;
-  box-shadow: 0 8px 32px rgba(52, 49, 49, 0.3);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
 }
 
 button {
@@ -22,7 +22,7 @@ button {
   margin: 10px;
   border-radius: 25px;
   border: none;
-  background: linear-gradient(to right, #d59585, #32251b);
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
   color: white;
   font-size: 16px;
   cursor: pointer;
@@ -42,7 +42,7 @@ input, textarea, select {
 }
 
 .hero {
-  background: url("https://www.google.com/search?sca_esv=1a399001e36a19eb&sxsrf=ANbL-n5gJSS7wjqaTmKl7BfDF-M5snO-rw:1776578424929&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3haANnLda_0ICNK9XOG44BAA6iP1iQgnF48SzaArw3DbIGhtIfwriDThPF2P6RRSLBCoqkEuHB06qHeLX6x82fdlPqCQ60OHkqCJVFO2JofPTLurFHj92u_XKrNNxpZ7v2PFjxF63OvokUMirmGm9HZ7Svim9KEncVewMgZFEP04FExk9A&q=student+mental+wellness+images&sa=X&ved=2ahUKEwjBzLuvnvmTAxWpn2MGHeb8LW0QtKgLegQIExAB&biw=736&bih=682&dpr=2#sv=CAMSVhoyKhBlLXlkS1B0MXFiOHlMdTNNMg55ZEtQdDFxYjh5THUzTToOUkpKWnVwbjl0bEF6aE0gBCocCgZtb3NhaWMSEGUteWRLUHQxcWI4eUx1M00YADABGAcgnIP8og1KCBABGAEgASgB");
+  background: url("https://images.unsplash.com/photo-1a399001e36a19eb&sxsrf=ANbL-n5gJSS7wjqaTmKl7BfDF-M5snO-rw:1776578424929&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3haANnLda_0ICNK9XOG44BAA6iP1iQgnF48SzaArw3DbIGhtIfwriDThPF2P6RRSLBCoqkEuHB06qHeLX6x82fdlPqCQ60OHkqCJVFO2JofPTLurFHj92u_XKrNNxpZ7v2PFjxF63OvokUMirmGm9HZ7Svim9KEncVewMgZFEP04FExk9A&q=student+mental+wellness+images&sa=X&ved=2ahUKEwjBzLuvnvmTAxWpn2MGHeb8LW0QtKgLegQIExAB&biw=736&bih=682&dpr=2#sv=CAMSVhoyKhBlLXlkS1B0MXFiOHlMdTNNMg55ZEtQdDFxYjh5THUzTToOUkpKWnVwbjl0bEF6aE0gBCocCgZtb3NhaWMSEGUteWRLUHQxcWI4eUx1M00YADABGAcgnIP8og1KCBABGAEgASgB");
   background-size: cover;
   padding: 100px 20px;
 }
